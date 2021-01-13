@@ -1,8 +1,8 @@
 module.exports = {
-    pwa: {
-      workboxPluginMode: 'InjectManifest',
-      workboxOptions: {
-        swDest: 'service-worker.js',
-      },
-    },
-  };
+  runtimeCompiler: true,
+  pwa: {
+    workboxPluginMode: "InjectManifest",
+    workboxOptions:{
+      swSrc: "src/service-worker.js"
+  }
+};
